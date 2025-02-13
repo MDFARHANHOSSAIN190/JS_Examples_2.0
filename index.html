@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="js_examples2.0">
+<meta name="description" content="lorem">
+<meta name="keywords" content="html,css,bootstrap,js">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="revisit-after" content="3 days">
+<meta name="author" content="MD FARHAN HOSSAIN">
+
+
+  <title>JS Examples 2.0</title>
+  <!-- font links -->
+ <link rel="icon" type="image/png" href="img/js_icon.png">
+  <!-- css links -->
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+	
+  <div class="container">
+
+  <h1>JS Examples 2.0</h1>
+
+  <hr>
+  <h2>Displaying Switch Statement</h2>
+
+  <input type="number" id="day" value="3">
+  <button onclick="checkDay()">Check Day</button>
+  <p id="dayResult"></p>
+  <hr>
+  <h2>Displaying  Switch with Seasons</h2>
+  
+  <input type="text" id="seasonInput" value="Summer">
+  <button id="seasonBtn">Check Season</button>
+  <p id="seasonResult"></p>
+   <h2>Displaying Do-While Loop</h2>
+  <p>This example demonstrates using a do-while loop to print numbers until a condition is met.</p>
+  <button id="doWhileLoopBtn">Show Numbers</button>
+  <p id="doWhileLoopResult"></p>
+  <hr>
+
+  <h2>Click the buttons to off/on bulb</h2>
+    <button type="button" onclick="bulbOn()" class="btn btn-dark">Bulb On</button>
+    <img src="images/off.gif" id="image" alt="">
+    <button type="button" onclick="bulbOff()" class="btn btn-dark">Bulb Off</button>
+<hr>
+
+  <h2> Change Picture on Button Click</h2>
+  <button onclick="changeImage()">Click me to change the picture</button>
+  <img id="image1" src="img/image1.jpg" alt="Image" width="300" height="200">
+<hr>
+  <h2>Display Current Time</h2>
+  <p id="currentTime"></p>
+<hr>
+   <h2> If-Else with String</h2>
+  
+  <input type="text" id="fruitInput" value="Apple">
+  <button id="fruitBtn" onclick="checkFruit()">Check Fruit</button>
+  <p id="fruitResult"></p>
+  <hr>
+  <h2>Else If with Boolean</h2>
+  
+  <button id="sunBtn" onclick="checkSun()">Check Sun</button>
+  <p id="sunResult"></p>
+  <hr>
+   <h2>If with Boolean</h2>
+  
+  <button id="rainBtn" onclick="checkRain()">Check Rain</button>
+  <p id="rainResult"></p>
+  <hr>
+   <h2>If-Else with Logical Operators</h2>
+  
+  <input type="text" id="countryInput" value="USA">
+  <button id="countryBtn" onclick="checkCountry()">Check Country</button>
+  <p id="countryResult"></p>
+  <hr>
+<h2>If-Else with Comparison Operators</h2>
+ 
+  <input type="number" id="compareNum1" value="15">
+  <input type="number" id="compareNum2" value="20">
+  <button id="compareBtn" onclick="compareNumbers()">Compare Numbers</button>
+  <p id="compareResult"></p>
+  <hr>
+  <h2> If with Multiple Conditions</h2>
+  
+  <input type="number" id="numInput" value="10">
+  <button id="numBtn" onclick="checkNumber()">Check Number</button>
+  <p id="numResult"></p>
+  <hr>
+  <h2>Displaying Key Press Event</h2>
+
+  <input type="text" id="myInput2" placeholder="Type something">
+  <hr>
+   <h2>Displaying Mouse Over Event</h2>
+  
+  <p id="hoverText2">Hover over me!</p>
+  <hr>
+
+   <h2>Displaying Array Push</h2>
+  
+  <button onclick="addColor()">Add Color</button>
+  <p id="colorsResult"></p>
+  <hr>
+   <h2>Displaying Each Loop</h2>
+  
+  <button onclick="showAnimals()">Show Animals</button>
+  <p id="animalsResult"></p>
+  
+  <hr>
+   <h2>Displaying Let Keyword</h2>
+  
+  <button onclick="showMessage()">Show Message</button>
+  <p id="messageResult"></p>
+  <hr>
+   <h2>Displaying Events - Click</h2>
+ 
+  <button id="clickButton">Click me</button>
+  <hr>
+  <h2>Displaying Data Types - Strings</h2>
+  
+  <button onclick="showTex()">Show Text</button>
+  <p id="textResult"></p>
+  <hr>
+   <h2>Displaying Data Types - Numbers</h2>
+  
+  <button onclick="showNumber()">Show Number</button>
+  <p id="numberResult"></p>
+  <hr>
+  <h2>Displaying If-Else Statement</h2>
+  
+  <button onclick="checkMember()">Check Membership</button>
+  <p id="membershipResult">This example demonstrates an if-else statement.</p>
+  <hr>
+   <h2>Displaying If Statement</h2>
+
+  <button onclick="checkAge()">Check Age</button>
+  <p id="ageResult"></p>
+<hr>
+ <h2> Displaying For Loop</h2>
+ <button onclick="showNumbers()">Show Numbers</button>
+
+  <p id="numbersResult">This example demonstrates a simple for loop.</p>
+  
+  
+  <hr>
+<h2> Division Operator</h2>
+ 
+    <input type="number" id="div1" value="20">
+  <input type="number" id="div2" value="4">
+  <button onclick="divideNumbers()">Divide</button>
+  <p id="divResult"></p>
+
+<hr>
+  <h2>Toggle Text on Button Click</h2>
+  <button onclick="toggleText()">Toggle Text</button>
+  <p id="toggleText">Hello, World!</p>
+<hr>
+ <h2>Show/Hide an Element</h2>
+  <button onclick="toggleElement()">Show/Hide Text</button>
+  <p id="toggleElement" style="display:none">This is some text.</p>
+  <hr>
+<h2>Update Text on Button Click</h2>
+  <button onclick="updateText()">Click to Update Text</button>
+  <p id="updateText">Original Text</p>
+<hr>
+<h2> Calculate and Display Sum</h2>
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+  <button onclick="calculateSum()">Calculate Sum</button>
+  <p id="sumResult"></p>
+<hr>
+<h2>Change Text Color on Mouse Over</h2>
+  <p id="mouseoverText" onmouseover="changeTextColor()" onmouseout="resetTextColor()">Hover over this text to change its color.</p>
+<hr>
+ <h2>Alert Box on Button Click</h2>
+  <button onclick="showAlert()">Click me</button>
+<hr>
+  <h2>Display Random Number</h2>
+  <button onclick="displayRandomNumber()">Generate Random Number</button>
+  <p id="randomNumber"></p>
+<hr>
+  <h2>Change Text Content on Double Click</h2>
+  <p id="dblclickText" ondblclick="changeText()">Double-click this text to change it.</p>
+  <hr>
+
+  <h2>Count Button Clicks</h2>
+  <button onclick="countClicks()">Click me</button>
+  <p id="clickCount">Clicks: 0</p>
+<hr>
+  <h2>Display Length of Text Input</h2>
+  <input type="text" id="textInput" onkeyup="displayLength()">
+  <p id="textLength">Length: 0</p>
+<hr>
+  <h2>Convert Temperature from Celsius to Fahrenheit</h2>
+  <input type="number" id="celsius" placeholder="Enter Celsius">
+  <button onclick="convertTemperature()">Convert to Fahrenheit</button>
+  <p id="fahrenheit"></p>
+<hr>
+  <h2>Reverse a String</h2>
+  <input type="text" id="stringInput" placeholder="Enter a string">
+  <button onclick="reverseString()">Reverse String</button>
+  <p id="reversedString"></p>
+<hr>
+  <h2>Calculate Factorial of a Number</h2>
+  <input type="number" id="factorialInput" placeholder="Enter a number">
+  <button onclick="calculateFactorial()">Calculate Factorial</button>
+  <p id="factorialResult"></p>
+<hr>
+
+  <h2>Convert Text to Uppercase</h2>
+  <input type="text" id="uppercaseInput" placeholder="Enter text">
+  <button onclick="convertToUppercase()">Convert to Uppercase</button>
+  <p id="uppercaseResult"></p>
+<hr>
+  <h2>Convert Text to Lowercase</h2>
+  <input type="text" id="lowercaseInput" placeholder="Enter text">
+  <button onclick="convertToLowercase()">Convert to Lowercase</button>
+  <p id="lowercaseResult"></p>
+<hr>
+  <h2>Calculate Area of a Circle</h2>
+  <input type="number" id="radiusInput" placeholder="Enter radius">
+  <button onclick="calculateCircleArea()">Calculate Area</button>
+  <p id="circleArea"></p>
+<hr>
+ <h2>Change Text Color on Button Click</h2>
+  <button onclick="changeTextColor()">Change Text Color</button>
+  <p id="colorText">This text will change color.</p>
+<hr>
+  <h2>Display Alert on Form Submission</h2>
+  <form onsubmit="displayFormAlert(event)">
+    <input type="text" id="formInput" placeholder="Enter text">
+    <button type="submit">Submit</button>
+  </form>
+  <hr>
+  <h2>Disable Button After Click</h2>
+  <button id="disableButton" onclick="disableButton()">Click to Disable</button>
+<hr>
+  <h2>Display User's Age</h2>
+  <input type="number" id="birthYear" placeholder="Enter your birth year">
+  <button onclick="displayAge()">Display Age</button>
+  <p id="ageDisplay"></p>
+<hr>
+  <h2>Change Background Color on Mouse Over</h2>
+  <p id="mouseOverText" onmouseover="changeBackgroundColor()" onmouseout="resetBackgroundColor()">Hover over this text to change background color.</p>
+<hr>
+  <h2>Display Current Month</h2>
+  <button onclick="displayMonth()">Show Current Month</button>
+  <p id="currentMonth"></p>
+<hr>
+  <h2>Calculate Square of a Number</h2>
+  <input type="number" id="squareInput" placeholder="Enter a number">
+  <button onclick="calculateSquare()">Calculate Square</button>
+  <p id="squareResult"></p>
+<hr>
+  <h2>Greet User Based on Time of Day</h2>
+  <button onclick="greetUser()">Greet Me</button>
+  <p id="greeting"></p>
+<hr>
+  <h2>Display Random Quote</h2>
+  <button onclick="displayQuote()">Show Random Quote</button>
+  <p id="randomQuote"></p>
+<hr> 
+
+
+</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
